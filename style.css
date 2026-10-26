@@ -15,9 +15,9 @@ body {
 }
 
 
-/* 
+/*
    ШАПКА
-    */
+*/
 
 header {
     width: 100%;
@@ -25,16 +25,14 @@ header {
 }
 
 .header-inner {
-    max-width: 960px;
+    width: 100%;
     min-height: 125px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    position: relative;
+    margin: 0;
+    padding: 15px 30px;
 
     display: flex;
     align-items: center;
 }
-
 
 /* Логотип */
 .logo {
@@ -49,7 +47,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 
     flex-shrink: 0;
 }
@@ -64,12 +61,10 @@ header {
 
 /* Меню */
 nav {
-    position: absolute;
-    top: 18px;
-    right: 20px;
+    margin-left: auto;
 
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
@@ -82,9 +77,9 @@ nav a:hover {
 }
 
 
-/* 
+/*
    ОСНОВНОЙ КОНТЕНТ
-    */
+*/
 
 .content {
     max-width: 960px;
@@ -109,9 +104,9 @@ nav a:hover {
 }
 
 
-/* 
+/*
    СПИСОК ГИПЕРССЫЛОК
-    */
+*/
 
 .block ol {
     margin: 0;
@@ -130,6 +125,7 @@ a {
 /* Из примера div.html:
    отдельный блок ограничен по ширине
    и центрируется */
+
 .image-map {
     max-width: 500px;
     margin: 20px auto 0;
@@ -142,9 +138,9 @@ a {
 }
 
 
-/* 
+/*
    ТАБЛИЦА
-   */
+*/
 
 table {
     width: 100%;
@@ -174,9 +170,9 @@ tbody tr:nth-child(even) {
 }
 
 
-/* 
+/*
    ФОРМА
-   */
+*/
 
 form {
     max-width: 600px;
@@ -197,7 +193,6 @@ form textarea {
     padding: 8px;
 
     font: inherit;
-
     border: 1px solid #777;
     border-radius: 2px;
 }
@@ -237,9 +232,9 @@ fieldset {
 }
 
 
-/* 
+/*
    ПОДВАЛ
-   */
+*/
 
 footer {
     width: 100%;
@@ -254,20 +249,21 @@ footer {
 }
 
 
-/* 
+/*
    АДАПТАЦИЯ
-    */
+*/
 
 @media (max-width: 700px) {
 
     .header-inner {
         flex-wrap: wrap;
         gap: 15px;
+        padding: 15px 20px;
     }
 
     nav {
-        position: static;
         width: 100%;
+        margin-left: 0;
 
         justify-content: center;
         flex-wrap: wrap;
@@ -281,3 +277,4 @@ footer {
         font-size: 13px;
     }
 }
+
